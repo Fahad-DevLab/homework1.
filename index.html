@@ -3,236 +3,120 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fahad Hamdan - CV</title>
+    <title>Fahad Hamdan Alharbi- CV</title>
     
-    <!-- Bootstrap CSS (CDN) -->
+    <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
     
     <style>
-        /* Dark Mode Custom CSS */
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            line-height: 1.6;
-            color: #e0e0e0; /* Light text for dark background */
-            background-color: #121212; /* Very dark background */
-            text-align: left;
+            background-color: #000000; /* خلفية سوداء تماماً */
         }
-
-        /* Navbar */
-        .navbar {
-            background-color: #1f1f1f !important;
-            border-bottom: 1px solid #333;
+        .card {
+            background-color: #1a1a1a !important; /* خلفية البطاقة رمادي غامق جداً */
+            border: 1px solid #333 !important;
         }
-
-        /* Sections */
-        section, .profile-section {
-            background-color: #1e1e1e; /* Darker grey for sections */
-            padding: 40px;
-            border-radius: 12px;
-            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
-            margin-bottom: 30px;
-            border: 1px solid #333;
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-        }
-
-        section:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 6px 25px rgba(0, 0, 0, 0.7);
-            border-color: #007bff;
-        }
-
-        section h2 {
-            color: #007bff; /* Primary blue for headings */
-            font-weight: 700;
-            border-bottom: 2px solid #333;
-            padding-bottom: 15px;
-            margin-bottom: 25px;
-        }
-
-        /* Profile Image */
         .profile-img {
-            width: 200px;
-            height: 200px;
+            width: 150px;
+            height: 150px;
             border-radius: 50%;
-            object-fit: cover;
-            border: 4px solid #007bff;
-            box-shadow: 0 0 20px rgba(0, 123, 255, 0.4);
+            border: 3px solid #0d6efd;
         }
-
-        /* Text Colors */
-        .text-muted {
-            color: #b0b0b0 !important;
-        }
-
-        .display-4 {
-            color: #ffffff;
-            font-weight: 700;
-        }
-
-        /* Badges */
-        .badge {
-            font-size: 14px;
-            padding: 10px 15px;
-            margin-right: 8px;
-            margin-bottom: 10px;
-            background-color: #007bff !important;
-            color: white;
-            border-radius: 30px;
-        }
-
-        /* Links */
-        a {
-            color: #3399ff;
-            text-decoration: none;
-            transition: color 0.2s;
-        }
-
-        a:hover {
-            color: #66b2ff;
-            text-decoration: underline;
-        }
-
-        /* List items */
-        ul li {
-            margin-bottom: 10px;
-            color: #d0d0d0;
-        }
-
-        /* Footer */
-        footer {
-            background-color: #1a1a1a;
-            border-top: 1px solid #333;
-            color: #888;
-        }
-
-        /* HR */
-        hr {
-            border-color: #444;
-            opacity: 0.5;
-            margin: 40px 0;
-        }
-
-        /* Responsive adjustments */
-        @media (max-width: 768px) {
-            .profile-img { width: 150px; height: 150px; }
-            .profile-section { padding: 25px; }
-            .display-4 { font-size: 2.5rem; }
-        }
+        /* ضمان ظهور العناوين باللون الأزرق والنصوص بالأبيض */
+        h1, h2, h4, h5 { color: #0d6efd !important; }
+        p, li, span { color: #ffffff !important; }
+        .text-secondary { color: #adb5bd !important; }
     </style>
 </head>
 <body>
 
-    <!-- Navbar -->
-    <nav class="navbar navbar-dark sticky-top">
-        <div class="container">
-            <span class="navbar-brand mb-0 h1">Fahad Hamdan</span>
-        </div>
-    </nav>
-
-    <!-- Main Container -->
     <div class="container my-5">
-        <!-- Profile Section -->
-        <section class="profile-section mb-5">
-            <div class="row align-items-center">
-                <div class="col-md-3 text-center mb-4 mb-md-0">
-                    <!-- You can replace this with your local image path: assets/profile.jpg -->
-                    <img src="d:\Downloads\unnamed (3).jpg" alt="Profile Photo" class="profile-img">
+        
+        <!-- Header Card -->
+        <div class="card mb-4 shadow">
+            <div class="card-body text-center">
+                <img src="d:\Downloads\unnamed (3).jpg" class="profile-img mb-3" alt="Fahad">
+                <h1 class="display-4 fw-bold">FAHAD HAMDAN ALHARBI</h1>
+                <p class="lead">Game Designer | Software Engineer</p>
+                <p class="text-secondary">Fahadnhamdan@gmail.com | +966 508357388</p>
+            </div>
+        </div>
+
+        <!-- Summary Card -->
+        <div class="card mb-4 shadow">
+            <div class="card-body">
+                <h2 class="h4 border-bottom pb-2">Professional Summary</h2>
+                <p>Passionate game designer and software engineer with expertise in game mechanics, survival systems, and team collaboration. Co-founder of Ammigs Mobile Games Studio.</p>
+            </div>
+        </div>
+
+        <!-- Experience Card -->
+        <div class="card mb-4 shadow">
+            <div class="card-body">
+                <h2 class="h4 border-bottom pb-2">Experience</h2>
+                
+                <div class="mb-3">
+                    <h5>Game Designer</h5>
+                    <p class="text-secondary mb-1">Ammigs Studio | 2024 - 2025</p>
+                    <ul>
+                        <li>Designed engaging game mechanics and survival systems.</li>
+                        <li>Collaborated with programmers and artists for technical alignment.</li>
+                    </ul>
                 </div>
-                <div class="col-md-9">
-                    <h1 class="display-4">Fahad Hamdan Alharbi</h1>
-                    <h3 class="text-muted">Game Designer | Software Engineer</h3>
-                    <p class="lead mt-3">
-                        Passionate game designer and software engineer with expertise in game mechanics, survival systems, and team collaboration. 
-                        Co-founder of Ammigs Mobile Games Studio with a proven track record in designing engaging gaming experiences.
-                    </p>
+
+                <div>
+                    <h5>Co-Founder</h5>
+                    <p class="text-secondary mb-1">Ammigs Studio | 2025</p>
+                    <ul>
+                        <li>Directed creative efforts and ensured high-quality gameplay.</li>
+                        <li>Represented the company at LEAP 2025 and Biban 2024.</li>
+                    </ul>
                 </div>
             </div>
-        </section>
+        </div>
 
-        <!-- Contact Information -->
-        <section class="mb-5">
-            <h2 class="mb-4">Contact Information</h2>
-            <div class="row">
-                <div class="col-md-6">
-                    <p><strong>Phone:</strong> <a href="tel:+966508357388">+966 508357388</a></p>
-                    <p><strong>Email:</strong> <a href="mailto:Fahadnhamdan@gmail.com">Fahadnhamdan@gmail.com</a></p>
+        <!-- Education & Skills -->
+        <div class="row">
+            <div class="col-md-6">
+                <div class="card mb-4 shadow h-100">
+                    <div class="card-body">
+                        <h2 class="h4 border-bottom pb-2">Education</h2>
+                        <h5>Software Engineering</h5>
+                        <p class="text-secondary">Telecom and Information College  
+2020 - Present</p>
+                    </div>
                 </div>
-                <div class="col-md-6">
-                    <p><strong>LinkedIn:</strong> <a href="#" target="_blank">linkedin.com/in/fahad</a></p>
+            </div>
+            <div class="col-md-6">
+                <div class="card mb-4 shadow h-100">
+                    <div class="card-body">
+                        <h2 class="h4 border-bottom pb-2">Skills</h2>
+                        <div class="d-flex flex-wrap gap-2">
+                            <span class="badge bg-primary">Game Design</span>
+                            <span class="badge bg-primary">Software Engineering</span>
+                            <span class="badge bg-primary">Teamwork</span>
+                            <span class="badge bg-primary">English</span>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </section>
+        </div>
 
-        <!-- Professional Experience -->
-        <section class="mb-5">
-            <h2 class="mb-4">Professional Experience</h2>
-            
-            <div class="mb-4">
-                <h4>Game Designer</h4>
-                <p class="text-muted"><strong>Ammigs Mobile Games Studio</strong> | August 2024 – November 2025</p>
-                <ul>
-                    <li>Collaborated with a multidisciplinary team to design engaging game mechanics, levels, and experiences.</li>
-                    <li>Specialized in survival game systems, including resource management, crafting, and progression mechanics.</li>
-                    <li>Worked closely with programmers and artists to align game design with creative vision and technical requirements.</li>
-                </ul>
+        <!-- Certificates Card -->
+        <div class="card mb-4 shadow">
+            <div class="card-body">
+                <h2 class="h4 border-bottom pb-2">Certificates</h2>
+                <p class="mb-1"><strong>Saudi Game Champions (SGC )</strong> - Mcit/CODE</p>
+                <p class="mb-0"><strong>Fundamentals of AI</strong> - SDAIA</p>
             </div>
+        </div>
 
-            <div class="mb-4">
-                <h4>Co Founder</h4>
-                <p class="text-muted"><strong>Ammigs Mobile Games Studio</strong> | January 2025 – June 2025</p>
-                <ul>
-                    <li>Co-founded a game development startup focusing on creating innovative and market-driven gaming experiences.</li>
-                    <li>Directed creative efforts in game design, ensuring high-quality gameplay and alignment with player expectations.</li>
-                    <li>Managed and represented the company at LEAP 2025 and Biban 2024, engaging effectively with visitors and partners.</li>
-                </ul>
-            </div>
-        </section>
-
-        <!-- Education -->
-        <section class="mb-5">
-            <h2 class="mb-4">Education</h2>
-            <div class="mb-4">
-                <h4>Software Engineering</h4>
-                <p class="text-muted"><strong>Telecom and Information College</strong> | 2020 - Present</p>
-                <p>Studying core concepts of software engineering, including programming, system design, and software development methodologies.</p>
-            </div>
-        </section>
-
-        <!-- Skills -->
-        <section class="mb-5">
-            <h2 class="mb-4">Skills</h2>
-            <div class="d-flex flex-wrap">
-                <span class="badge">Game Design and Development</span>
-                <span class="badge">Software Engineering Principles</span>
-                <span class="badge">Problem-Solving and Analytical Skills</span>
-                <span class="badge">Excellent Communication</span>
-                <span class="badge">English Proficiency</span>
-                <span class="badge">Team Collaboration</span>
-            </div>
-        </section>
-
-        <!-- Certificates -->
-        <section class="mb-5">
-            <h2 class="mb-4">Certificates</h2>
-            <div class="mb-3">
-                <h5>Saudi Game Champions (SGC) Program</h5>
-                <p class="text-muted">Mcit/CODE | September - December 2024</p>
-            </div>
-            <div class="mb-3">
-                <h5>Fundamentals of Artificial Intelligence</h5>
-                <p class="text-muted">SDAIA - "Million Saudi into AI" initiative</p>
-            </div>
-        </section>
     </div>
 
-    <!-- Footer -->
-    <footer class="text-center py-4">
-        <p>&copy; 2025 Fahad Hamdan. All rights reserved.</p>
-    </footer>
-
-    <!-- Scripts (Required at the end of body) -->
+    <!-- Scripts -->
     <script src="js/popper.min.js"></script>
     <script src="js/jquery-4.0.0.min.js"></script>
     <script src="js/bootstrap.js"></script>
+
 </body>
 </html>
